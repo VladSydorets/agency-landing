@@ -1,0 +1,93 @@
+.section__benefits {
+  background-color: #f9f7fc;
+  .benefits {
+    @include display-flex(row, space-between, center);
+    padding: 140px 0;
+    height: fit-content;
+
+    @include medium {
+      @include display-flex(column, space-between, center);
+      gap: 56px;
+    }
+
+    // .benefits__item
+
+    &__item {
+      @include display-flex(column, space-between, flex-start);
+      width: 50%;
+      gap: 24px;
+
+      &:last-of-type {
+        gap: 56px;
+      }
+
+      @include medium {
+        width: 70%;
+        text-align: center;
+      }
+
+      &-element {
+        @include display-flex(column, space-between, flex-start);
+        gap: 16px;
+
+        @include medium {
+          @include display-flex(column, space-between, center);
+        }
+      }
+    }
+
+    // .benefits__divider
+
+    &__divider {
+      height: 558px;
+      margin: 0 62px;
+      width: 1px;
+      background-color: black;
+      opacity: 0.1;
+      content: "";
+      @include medium {
+        display: none;
+      }
+    }
+
+    // .benefits__title
+
+    &__title {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 55px;
+      letter-spacing: -0.03em;
+      color: $primary-color;
+
+      @include large {
+        font-size: 40px;
+      }
+
+      span {
+        color: $secondary-color;
+      }
+    }
+
+    // .benefits__text
+
+    &__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: $grey-color;
+
+      @include large {
+        font-size: 15px;
+      }
+    }
+
+    // .benefits__item-title
+
+    &__item-title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 32px;
+      color: $primary-color;
+    }
+  }
+}

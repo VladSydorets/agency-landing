@@ -1,0 +1,174 @@
+// Cases Section
+.section__cases {
+  background-color: #fdf9f8;
+  padding: 100px 0 140px 0;
+
+  .navbar__cases {
+    max-width: 663px;
+    padding: 0 0 64px 0;
+
+    &-page {
+      @include display-flex(row, space-between, center);
+      @include medium {
+        padding: 0;
+      }
+    }
+
+    &-btn {
+      padding: 8px 0;
+
+      &.cases-btn-active {
+        border-bottom: 3px solid $secondary-color;
+      }
+
+      a {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 43px;
+        color: $primary-color;
+
+        @include medium {
+          font-size: 20px;
+        }
+
+        @include small {
+          font-size: 16px;
+          padding: 0 3px;
+        }
+      }
+    }
+  }
+
+  .cases {
+    @include display-flex(row, space-between, center);
+    position: relative;
+    display: none;
+
+    img {
+      max-width: 100%;
+      // max-height: auto;
+      position: absolute;
+      top: -10%;
+      right: 0;
+      transform: scale(0.9);
+
+      @include huge {
+        width: 90%;
+        right: -20%;
+      }
+
+      @include large {
+        width: 70%;
+        right: -12%;
+      }
+
+      @include medium {
+        display: none;
+      }
+    }
+
+    // .cases__item
+
+    &__item {
+      width: 45%;
+
+      @include medium {
+        width: 100%;
+      }
+    }
+
+    // .cases__title
+
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 51px;
+      letter-spacing: -0.03em;
+      color: $primary-color;
+
+      @include large {
+        font-size: 40px;
+      }
+
+      span {
+        color: $secondary-color;
+      }
+    }
+
+    // .cases__text
+
+    &__text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: $grey-color;
+      margin: 24px 0 32px 0;
+
+      @include large {
+        width: 90%;
+        font-size: 14px;
+      }
+    }
+
+    // .cases__subtitle
+
+    &__subtitle {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.2em;
+      color: $grey-color;
+      margin-bottom: 8px;
+    }
+
+    // .cases__replaces
+
+    &__replaces {
+      margin: 0 0 56px 0;
+    }
+
+    // .cases__replaces-item
+
+    &__replaces-item {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 32px;
+      color: $primary-color;
+      padding: 0 13px;
+
+      @include large {
+        font-size: 14px;
+      }
+
+      &:nth-child(1) {
+        padding-left: 0;
+        border-right: 1px solid lighten($primary-color, 70%);
+      }
+      &:nth-child(4) {
+        padding-right: 0;
+        border-left: 1px solid lighten($primary-color, 70%);
+      }
+      &:nth-child(2) {
+        border-right: 1px solid lighten($primary-color, 70%);
+      }
+    }
+
+    // .cases__btn
+
+    &__btn {
+      padding: 16px 42px;
+    }
+  }
+
+  .case-active {
+    display: flex;
+
+    @include medium {
+      @include display-flex(column, space-between, center);
+      text-align: center;
+    }
+  }
+}

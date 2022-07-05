@@ -1,0 +1,112 @@
+.footer {
+  @include display-flex(column, flex-end, center);
+  height: 872px;
+  background-color: #3b434f;
+  padding-bottom: 80px;
+
+  @include medium {
+    padding-bottom: 20px;
+    // height: 1000px;
+  }
+
+  @media (max-width: 617px) {
+    height: 920px;
+  }
+
+  @include small {
+    height: 1000px;
+  }
+
+  .container {
+    @include display-flex(column, center, center);
+    gap: 80px;
+  }
+
+  // .footer__item
+
+  &__item {
+    @include display-flex(row, space-between, center);
+    width: 100%;
+
+    @include medium {
+      flex-direction: column;
+      gap: 50px;
+      // margin-top: 200px;
+    }
+  }
+
+  // .footer__links
+
+  &__links {
+    @include display-flex(column, space-between, flex-start);
+    gap: 80px;
+
+    @include medium {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+    }
+
+    @include small {
+      gap: 50px;
+    }
+  }
+
+  // .footer__logo
+
+  &__logo {
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 55px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+
+  // .footer__social-links
+
+  &__social-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  // .footer__social-link
+
+  &__social-link {
+    &:hover,
+    &:focus {
+      path {
+        transition: 0.3s all ease-in;
+        fill: $secondary-color;
+      }
+    }
+  }
+
+  // .footer__menu
+
+  &__menu {
+    @include display-flex(row, space-between, flex-start);
+    gap: 100px;
+
+    @include medium {
+      width: 100%;
+      gap: 50px;
+    }
+
+    &-item {
+      @include display-flex(column, space-between, flex-start);
+      gap: 32px;
+    }
+
+    &-link {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #ffffff;
+
+      @include medium {
+        font-size: 16px;
+      }
+    }
+  }
+}

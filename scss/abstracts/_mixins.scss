@@ -1,0 +1,45 @@
+// Mixin for applying styles to the text
+@mixin text-styling($size: "inherit", $weight: "inherit", $height: "inherit") {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+// Mixin for setting display to flex
+@mixin display-flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Mixin to set element's width and height
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// Responsive Media Queries
+@mixin huge {
+  @media (max-width: $breakpoint-huge) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: $breakpoint-large) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: $breakpoint-medium) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: $breakpoint-small) {
+    @content;
+  }
+}

@@ -1,0 +1,164 @@
+// Hero Section
+.section__hero {
+  margin-bottom: 144px;
+
+  .hero {
+    @include display-flex(row, space-between, center);
+
+    // .hero__img
+
+    &__img {
+      @include large {
+        display: none;
+      }
+    }
+
+    // .hero__item
+
+    &__item:nth-child(1) {
+      width: 412px;
+
+      @include large {
+        @include display-flex(column, space-between, center);
+        width: 100%;
+        gap: 40px;
+        text-align: center;
+      }
+
+      @include small {
+        gap: 30px;
+      }
+    }
+
+    //   .hero__text
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    // .hero__title
+
+    &__title {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 66px;
+      letter-spacing: -0.03em;
+      color: $primary-color;
+
+      @include large {
+        font-size: 50px;
+      }
+
+      @include small {
+        font-size: 44px;
+      }
+
+      // .hero__title span
+
+      span {
+        color: $secondary-color;
+      }
+    }
+
+    // .hero__subtitle
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 180%;
+      color: $grey-color;
+
+      @include small {
+        font-size: 16px;
+      }
+    }
+
+    // .hero__input
+
+    &__input {
+      border: 1px solid #dfe8fa;
+      border-radius: 15px;
+      width: 100%;
+      outline: #dfe8fa;
+      padding: 14px 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 180%;
+      color: $grey-color;
+    }
+
+    // .hero__btn
+
+    &__btn {
+      padding: 16px 38px;
+
+      @include small {
+        padding: 14px 34px;
+      }
+    }
+
+    // .hero__rating
+
+    &__rating {
+      margin: 16px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    // .hero__reviews
+
+    &__reviews {
+      @include display-flex(row, space-between, center);
+    }
+
+    // .hero__reviews-text
+
+    &__reviews-text {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 27px;
+      color: $grey-color;
+    }
+
+    // .hero__rating-logos
+
+    &__rating-logos {
+      display: flex;
+      gap: 38px;
+
+      @include small {
+        gap: 20px;
+      }
+    }
+
+    .form {
+      margin: 2rem 0;
+      @include display-flex(column, space-between, flex-start);
+      gap: 16px;
+
+      // .form__bottom
+
+      &__bottom {
+        @include display-flex(row, flex-start, center);
+        gap: 30px;
+      }
+
+      // .form__text
+
+      &__text {
+        color: #bbc0c7;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 22px;
+        width: 35%;
+
+        @include small {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Scripts -->
+    <script src="src/main.js" defer></script>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Fading Effect -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Agency</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__logo"><div class="nav__logo-text">Agency</div></div>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a href="" class="nav__list-link">Product</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="" class="nav__list-link">Use Case</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="" class="nav__list-link">Learn</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="" class="nav__list-link">Comparison</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="" class="nav__list-link">Pricing</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="" class="nav__list-link">Contact Sales</a>
+              </li>
+            </ul>
+
+            <div class="nav__right-menu">
+              <a href="#" class="nav__btn">Sign Up</a>
+
+              <div class="nav__language">
+                <a class="nav__language-current">EN</a>
+                <ul class="nav__language-list">
+                  <!-- <li class="nav__language-item">
+                  <a href="#">EN</a>
+                </li> -->
+                  <li class="nav__language-item">
+                    <a href="#">DE</a>
+                  </li>
+                  <li class="nav__language-item"><a href="#">FR</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav__hamburger">
+            <div class="line"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section__hero">
+        <div class="container">
+          <div class="hero">
+            <div class="hero__item">
+              <div class="hero__text">
+                <h1 class="hero__title">your agency. <span>in a box.</span></h1>
+                <p class="hero__subtitle">
+                  All of your work in one place. And much more
+                </p>
+              </div>
+              <form class="form">
+                <input
+                  type="email"
+                  class="hero__input"
+                  placeholder="Enter your email address"
+                />
+                <div class="form__bottom">
+                  <button class="btn__primary hero__btn">Sign Up</button>
+                  <div class="form__text">AND BE PART OF THE CLOSED BETA</div>
+                </div>
+              </form>
+              <div class="hero__rating">
+                <div class="hero__reviews">
+                  <img src="img/stars.svg" alt="stars" />
+                  <div class="hero__reviews-text">
+                    Based on 100+ marketers reviews on
+                  </div>
+                </div>
+                <div class="hero__rating-logos">
+                  <img src="img/logo-1.svg" alt="crowd logo" /><img
+                    src="img/logo-2.svg"
+                    alt="trustpilot logo"
+                  /><img src="img/logo-3.svg" alt="capterra logo" />
+                </div>
+              </div>
+            </div>
+            <div class="hero__item">
+              <img
+                src="img/hero-img.svg"
+                width="682"
+                height="700"
+                alt="task showcase"
+                class="hero__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section__cases"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div class="container">
+          <div class="navbar__cases">
+            <ul class="navbar__cases-page">
+              <li class="navbar__cases-btn cases-btn-active">
+                <a href="#">create</a>
+              </li>
+              <li class="navbar__cases-btn"><a href="#">manage</a></li>
+              <li class="navbar__cases-btn"><a href="#">automate</a></li>
+              <li class="navbar__cases-btn"><a href="#">chat</a></li>
+              <li class="navbar__cases-btn"><a href="#">delegate</a></li>
+            </ul>
+          </div>
+
+          <div class="cases case-active">
+            <div class="cases__item">
+              <h2 class="cases__title">
+                all your creative tasks <span>simplified with AI.</span>
+              </h2>
+              <p class="cases__text">
+                Get content ideas, generate captions that respects brand’s tone
+                of voice, design and plan your publications all in one place
+              </p>
+              <h6 class="cases__subtitle">REPLACES</h6>
+              <div class="cases__replaces">
+                <span class="cases__replaces-item">Feedly</span>
+                <span class="cases__replaces-item">Canva</span>
+                <span class="cases__replaces-item">Copy.ai</span>
+                <span class="cases__replaces-item">Hootsuite</span>
+              </div>
+              <a href="#" class="btn__primary cases__btn">Sign Up</a>
+            </div>
+            <div class="cases__item">
+              <img
+                src="/img/cases-1.svg"
+                width="725"
+                height="519"
+                alt="concept img"
+              />
+            </div>
+          </div>
+
+          <div class="cases">
+            <div class="cases__item">
+              <h2 class="cases__title">
+                transparency over all the <span>work ahead of you.</span>
+              </h2>
+              <p class="cases__text">
+                Plan, track, and manage all your work with project management
+                that flexes to your team's needs.
+              </p>
+              <h6 class="cases__subtitle">REPLACES</h6>
+              <div class="cases__replaces">
+                <span class="cases__replaces-item">Asana</span>
+                <span class="cases__replaces-item">Monday</span>
+              </div>
+              <a href="#" class="btn__primary cases__btn">Sign Up</a>
+            </div>
+            <div class="cases__item">
+              <img
+                src="/img/cases-2.svg"
+                width="725"
+                height="519"
+                alt="concept img"
+              />
+            </div>
+          </div>
+
+          <div class="cases">
+            <div class="cases__item">
+              <h2 class="cases__title">
+                your entire workflow <span>on autopilot.</span>
+              </h2>
+              <p class="cases__text">
+                Eliminate the busywork and focus on what matters with hundreds
+                of Automations. Automatically assign tasks, post comments,
+                update statuses, and sync with other tools.
+              </p>
+              <h6 class="cases__subtitle">REPLACES</h6>
+              <div class="cases__replaces">
+                <span class="cases__replaces-item">UiPath</span>
+                <span class="cases__replaces-item">Zapier</span>
+                <span class="cases__replaces-item">Airtable</span>
+              </div>
+              <a href="#" class="btn__primary cases__btn">Sign Up</a>
+            </div>
+            <div class="cases__item">
+              <img
+                src="/img/cases-3.svg"
+                width="725"
+                height="519"
+                alt="concept img"
+              />
+            </div>
+          </div>
+
+          <div class="cases">
+            <div class="cases__item">
+              <h2 class="cases__title">
+                one single chat <span>to rule them all.</span>
+              </h2>
+              <p class="cases__text">
+                Work smarter as a team with real-time chat. All your
+                client-facing conversations are automatically bridged to
+                Whatsapp
+              </p>
+              <h6 class="cases__subtitle">REPLACES</h6>
+              <div class="cases__replaces">
+                <span class="cases__replaces-item">Slack</span>
+                <span class="cases__replaces-item">MS Teams</span>
+                <span class="cases__replaces-item">Whatsapp</span>
+              </div>
+              <a href="#" class="btn__primary cases__btn">Sign Up</a>
+            </div>
+            <div class="cases__item">
+              <img
+                src="/img/cases-4.svg"
+                width="725"
+                height="519"
+                alt="concept img"
+              />
+            </div>
+          </div>
+
+          <div class="cases">
+            <div class="cases__item">
+              <h2 class="cases__title">
+                all your creative tasks <span>simplified with AI.</span>
+              </h2>
+              <p class="cases__text">
+                Get content ideas, generate captions that respects brand’s tone
+                of voice, design and plan your publications all in one place
+              </p>
+              <h6 class="cases__subtitle">REPLACES</h6>
+              <div class="cases__replaces">
+                <span class="cases__replaces-item">Feedly</span>
+                <span class="cases__replaces-item">Canva</span>
+                <span class="cases__replaces-item">Copy.ai</span>
+                <span class="cases__replaces-item">Hootsuite</span>
+              </div>
+              <a href="#" class="btn__primary cases__btn">Sign Up</a>
+            </div>
+            <div class="cases__item">
+              <img
+                src="/img/cases-5.svg"
+                width="515"
+                height="566"
+                alt="concept img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__benefits">
+        <div class="container">
+          <div class="benefits">
+            <div
+              class="benefits__item"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <h2 class="benefits__title">
+                stop <span>selling yourself.</span>
+              </h2>
+              <p class="benefits__text">
+                There is more in life than prospection. Just focus on your craft
+                and let us take care of the rest
+              </p>
+            </div>
+            <div class="benefits__divider"></div>
+            <div
+              class="benefits__item"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <div class="benefits__item-element">
+                <img
+                  src="img/benefits-1.svg"
+                  alt="arrow icon"
+                  class="benefits__img"
+                  width="48"
+                  height="48"
+                />
+                <h5 class="benefits__item-title">dedicated landing page</h5>
+                <p class="benefits__text">
+                  When onboarding on snikpic, you will have your own dedicated
+                  and shareable landing page optimized for conversion.
+                </p>
+              </div>
+              <div class="benefits__item-element">
+                <img
+                  src="img/benefits-2.svg"
+                  alt="call icon"
+                  class="benefits__img"
+                  width="48"
+                  height="48"
+                />
+                <h5 class="benefits__item-title">purchasable prospect</h5>
+                <p class="benefits__text">
+                  Use snikpic’s experience running ads and only buy from us
+                  prospect who have shown direct interest in your profile. We
+                  take care of the rest
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__pricing">
+        <div class="container">
+          <div class="pricing">
+            <div
+              class="pricing__item"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <h2 class="pricing__title">one simple <span>pricing.</span></h2>
+              <div class="pricing__features">
+                <a href="#" class="pricing__feature-item">Unlimited features</a>
+                <a href="#" class="pricing__feature-item">Unlimited members</a>
+                <a href="#" class="pricing__feature-item"
+                  >Unlimited workflows</a
+                >
+                <a href="#" class="pricing__feature-item"
+                  >Unlimited calendars</a
+                >
+                <a href="#" class="pricing__feature-item">Unlimited meeting</a>
+              </div>
+              <a href="#" class="btn__primary pricing__btn">Sign Up</a>
+            </div>
+            <div
+              class="pricing__item"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <img
+                src="img/pricing-bg.svg"
+                alt="pricing bg img"
+                class="pricing__bg"
+                width="618"
+                height="690"
+              />
+              <div class="pricing__text-wrap">
+                <div class="pricing__value">49€</div>
+                <div class="pricing__duration">/ client / month</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__slider">
+        <div class="container">
+          <!-- Slider main container -->
+          <div class="swiper" data-aos="fade-up" data-aos-duration="1500">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img
+                    src="img/slider-img-1.png"
+                    alt=""
+                    class="swiper-slide-picture"
+                    width="310"
+                    height="310"
+                  />
+                </div>
+                <div class="swiper-slide-item">
+                  <h4 class="swiper-slide-title">
+                    Christophe Bourand, ChrisWebMarketing
+                  </h4>
+                  <p class="swiper-slide-text">
+                    Juggling with all my clients and making sure everything was
+                    done correctly took me a lot of energy.
+                    <span>
+                      Not did Snikpic enabled me to tremendously release that
+                      extra useless work, but I quickly found myself able to
+                      take on much more clients than I originally could</span
+                    >
+                  </p>
+                  <img
+                    src="img/favicon-1.png"
+                    alt=""
+                    class="swiper-slide-img"
+                    width="63"
+                    height="64"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img
+                    src="img/slider-img-1.png"
+                    alt=""
+                    class="swiper-slide-picture"
+                    width="310"
+                    height="310"
+                  />
+                </div>
+                <div class="swiper-slide-item">
+                  <h4 class="swiper-slide-title">
+                    Christophe Bourand, ChrisWebMarketing
+                  </h4>
+                  <p class="swiper-slide-text">
+                    Juggling with all my clients and making sure everything was
+                    done correctly took me a lot of energy.
+                    <span>
+                      Not did Snikpic enabled me to tremendously release that
+                      extra useless work, but I quickly found myself able to
+                      take on much more clients than I originally could</span
+                    >
+                  </p>
+                  <img
+                    src="img/favicon-1.png"
+                    alt=""
+                    class="swiper-slide-img"
+                    width="63"
+                    height="64"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img
+                    src="img/slider-img-1.png"
+                    alt=""
+                    class="swiper-slide-picture"
+                    width="310"
+                    height="310"
+                  />
+                </div>
+                <div class="swiper-slide-item">
+                  <h4 class="swiper-slide-title">
+                    Christophe Bourand, ChrisWebMarketing
+                  </h4>
+                  <p class="swiper-slide-text">
+                    Juggling with all my clients and making sure everything was
+                    done correctly took me a lot of energy.
+                    <span>
+                      Not did Snikpic enabled me to tremendously release that
+                      extra useless work, but I quickly found myself able to
+                      take on much more clients than I originally could</span
+                    >
+                  </p>
+                  <img
+                    src="img/favicon-1.png"
+                    alt=""
+                    class="swiper-slide-img"
+                    width="63"
+                    height="64"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-item">
+                  <img
+                    src="img/slider-img-1.png"
+                    alt=""
+                    class="swiper-slide-picture"
+                    width="310"
+                    height="310"
+                  />
+                </div>
+                <div class="swiper-slide-item">
+                  <h4 class="swiper-slide-title">
+                    Christophe Bourand, ChrisWebMarketing
+                  </h4>
+                  <p class="swiper-slide-text">
+                    Juggling with all my clients and making sure everything was
+                    done correctly took me a lot of energy.
+                    <span>
+                      Not did Snikpic enabled me to tremendously release that
+                      extra useless work, but I quickly found myself able to
+                      take on much more clients than I originally could</span
+                    >
+                  </p>
+                  <img
+                    src="img/favicon-1.png"
+                    alt=""
+                    class="swiper-slide-img"
+                    width="63"
+                    height="64"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+              <svg
+                width="50"
+                height="51"
+                viewBox="0 0 50 51"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="25"
+                  cy="25.002"
+                  r="24"
+                  stroke="#1D2736"
+                  stroke-width="2"
+                />
+                <line
+                  x1="18"
+                  y1="25.002"
+                  x2="32"
+                  y2="25.002"
+                  stroke="#1D2736"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="29.4142"
+                  y1="21.002"
+                  x2="33"
+                  y2="24.5877"
+                  stroke="#1D2736"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="29"
+                  y1="28.5877"
+                  x2="32.5858"
+                  y2="25.002"
+                  stroke="#1D2736"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                width="50"
+                height="51"
+                viewBox="0 0 50 51"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="25"
+                  cy="25.002"
+                  r="24"
+                  stroke="#1D2736"
+                  stroke-width="2"
+                />
+                <line
+                  x1="18"
+                  y1="25.002"
+                  x2="32"
+                  y2="25.002"
+                  stroke="#1D2736"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="29.4142"
+                  y1="21.002"
+                  x2="33"
+                  y2="24.5877"
+                  stroke="#1D2736"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="29"
+                  y1="28.5877"
+                  x2="32.5858"
+                  y2="25.002"
+                  stroke="#1D2736"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__beta">
+        <div class="container">
+          <div class="beta" data-aos="fade-up" data-aos-duration="1500">
+            <h2 class="beta__title">apply to our <span>closed beta.</span></h2>
+            <form action="#" class="beta__form">
+              <div class="beta__form-item">
+                <label for="input-text">Name</label>
+                <input
+                  type="text"
+                  id="input-text"
+                  placeholder="Let’s not be strangers"
+                />
+              </div>
+              <div class="beta__form-item">
+                <label for="input-url">Website</label>
+                <input
+                  type="url"
+                  id="input-url"
+                  placeholder="Put the URL right there"
+                />
+              </div>
+              <div class="beta__form-item">
+                <label for="input-number">Phone Number</label>
+                <input type="text" id="input-number" placeholder="470000000" />
+              </div>
+              <div class="beta__form-item">
+                <label for="input-email">Email Address</label>
+                <input
+                  type="email"
+                  id="input-email"
+                  placeholder="That’s right, we need your email"
+                />
+              </div>
+              <div class="btn__wrapper">
+                <button type="submit" class="btn__primary beta__btn">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__item">
+          <div class="footer__links">
+            <div class="footer__logo">Agency</div>
+            <div class="footer__social-links">
+              <a href="#" class="footer__social-link"
+                ><svg
+                  width="31"
+                  height="31"
+                  viewBox="0 0 31 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4_1810)">
+                    <path
+                      d="M20.6529 5.14499H23.4816V0.218194C22.9936 0.151057 21.3152 0 19.3605 0C15.282 0 12.488 2.56539 12.488 7.28045V11.6198H7.9873V17.1276H12.488V30.9861H18.0061V17.1289H22.3248L23.0104 11.6211H18.0049V7.82658C18.0061 6.23466 18.4348 5.14499 20.6529 5.14499Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_1810">
+                      <rect width="30.9861" height="30.9861" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg
+                  width="32"
+                  height="31"
+                  viewBox="0 0 32 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4_1802)">
+                    <path
+                      d="M16.471 7.53735C12.0775 7.53735 8.52051 11.0982 8.52051 15.4879C8.52051 19.8814 12.0813 23.4384 16.471 23.4384C20.8646 23.4384 24.4215 19.8776 24.4215 15.4879C24.4215 11.0943 20.8607 7.53735 16.471 7.53735ZM16.471 20.6483C13.619 20.6483 11.3105 18.3386 11.3105 15.4879C11.3105 12.6371 13.6203 10.3274 16.471 10.3274C19.3217 10.3274 21.6315 12.6371 21.6315 15.4879C21.6328 18.3386 19.323 20.6483 16.471 20.6483Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M22.8524 0.100261C20.0016 -0.0327216 12.9407 -0.0262661 10.0874 0.100261C7.58008 0.21775 5.36844 0.82327 3.58545 2.60626C0.605619 5.58609 0.98649 9.60138 0.98649 15.49C0.98649 21.5168 0.650807 25.4392 3.58545 28.3738C6.5769 31.364 10.6503 30.9728 16.4692 30.9728C22.4392 30.9728 24.4998 30.9766 26.6107 30.1594C29.4808 29.0452 31.6472 26.4798 31.859 21.8719C31.9933 19.0199 31.9855 11.9602 31.859 9.10689C31.6033 3.66754 28.6842 0.368807 22.8524 0.100261ZM27.3647 26.4023C25.4113 28.3557 22.7013 28.1814 16.4318 28.1814C9.97633 28.1814 7.3877 28.277 5.49884 26.3829C3.32336 24.2178 3.71714 20.7409 3.71714 15.4694C3.71714 8.33611 2.98509 3.19887 10.1442 2.8322C11.789 2.7741 12.2732 2.75474 16.4137 2.75474L16.4718 2.79347C23.352 2.79347 28.75 2.07304 29.0741 9.23084C29.1477 10.8641 29.1645 11.3547 29.1645 15.4887C29.1632 21.8693 29.2846 24.4734 27.3647 26.4023Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M24.7358 9.08147C25.7619 9.08147 26.5937 8.24967 26.5937 7.2236C26.5937 6.19752 25.7619 5.36572 24.7358 5.36572C23.7097 5.36572 22.8779 6.19752 22.8779 7.2236C22.8779 8.24967 23.7097 9.08147 24.7358 9.08147Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_1802">
+                      <rect
+                        width="30.9861"
+                        height="30.9861"
+                        fill="white"
+                        transform="translate(0.972656)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link">
+                <svg
+                  width="32"
+                  height="31"
+                  viewBox="0 0 32 31"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_4_1806)">
+                    <path
+                      d="M31.9226 30.9857V30.9844H31.9304V19.6203C31.9304 14.0609 30.7335 9.77832 24.2342 9.77832C21.1097 9.77832 19.013 11.4929 18.157 13.1184H18.0667V10.2973H11.9043V30.9844H18.321V20.7409C18.321 18.0439 18.8323 15.4359 22.1723 15.4359C25.4633 15.4359 25.5124 18.5138 25.5124 20.9139V30.9857H31.9226Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M1.45703 10.2991H7.88149V30.9862H1.45703V10.2991Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M4.66525 0C2.61113 0 0.944336 1.66679 0.944336 3.72092C0.944336 5.77504 2.61113 7.47669 4.66525 7.47669C6.71937 7.47669 8.38617 5.77504 8.38617 3.72092C8.38488 1.66679 6.71808 0 4.66525 0V0Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_4_1806">
+                      <rect
+                        width="30.9861"
+                        height="30.9861"
+                        fill="white"
+                        transform="translate(0.944336)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-item">
+              <a href="#" class="footer__menu-link">About Us</a>
+              <a href="#" class="footer__menu-link">Blog</a>
+            </div>
+            <div class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Legal</a
+              ><a href="#" class="footer__menu-link">Privacy Policy</a
+              ><a href="#" class="footer__menu-link">Terms and Conditions</a>
+            </div>
+            <div class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Help</a>
+              <a href="#" class="footer__menu-link">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <p class="footer__signature">
+          S SRL - VAT BE0729.842.450 - contact@s.io - Avenue Armand Huysmans
+          157,1050 Bruxelies
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
