@@ -1,12 +1,7 @@
 .section__pricing {
   .pricing {
     @include display-flex(row, space-between, center);
-    padding: 92px 0 144px 0;
-
-    // @include medium {
-    //   @include display-flex(column, space-between, center);
-    //   gap: 50px;
-    // }
+    padding: 5.75rem 0 9rem 0;
 
     // .pricing__item
 
@@ -17,7 +12,7 @@
 
       &:nth-child(1) {
         @include display-flex(column, center, flex-start);
-        gap: 40px;
+        gap: 2.5rem;
 
         @include large {
           width: 55%;
@@ -25,7 +20,6 @@
 
         @include medium {
           @include display-flex(column, center, center);
-
           text-align: center;
           width: 100%;
         }
@@ -48,18 +42,16 @@
     // .pricing__title
 
     &__title {
-      font-weight: 700;
-      font-size: 50px;
-      line-height: 55px;
+      @include text-styling(3.125rem, 700, 3.4375rem);
       letter-spacing: -0.03em;
       color: $primary-color;
 
       @include huge {
-        font-size: 44px;
+        font-size: 2.75rem;
       }
 
       @include large {
-        font-size: 38px;
+        font-size: 2.375rem;
       }
 
       span {
@@ -72,7 +64,7 @@
     &__features {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
+      gap: 1rem;
 
       @include medium {
         justify-content: center;
@@ -82,22 +74,20 @@
     // .pricing__feature-item
 
     &__feature-item {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 32px;
-      padding: 8px 20px;
-      border: 1px solid black;
-      border-radius: 24px;
+      @include text-styling(1.125rem, 500, 2rem);
+      padding: 0.5rem 1.25rem;
+      border: 0.0625rem solid black;
+      border-radius: 1.5rem;
       transition: 0.3s all ease-in;
 
       @include huge {
-        font-size: 16px;
-        padding: 6px 16px;
+        font-size: 1rem;
+        padding: 0.375rem 1rem;
       }
 
       @include large {
-        font-size: 14px;
-        padding: 4px 12px;
+        font-size: 0.875rem;
+        padding: 0.25rem 0.75rem;
       }
 
       &:nth-child(1) {
@@ -139,14 +129,14 @@
     // .pricing__btn
 
     &__btn {
-      padding: 16px 42px;
+      padding: 1rem 2.625rem;
 
       @include huge {
-        padding: 14px 38px;
+        padding: 0.875rem 2.375rem;
       }
 
       @include large {
-        padding: 12px 34px;
+        padding: 0.75rem 2.125rem;
       }
     }
 
@@ -158,26 +148,23 @@
     // .pricing__value
 
     &__value {
-      font-weight: 700;
-      font-size: 120px;
-      line-height: 96px;
+      @include text-styling(7.5rem, 700, 6rem);
       letter-spacing: -0.03em;
+      color: $primary-color;
 
       @include huge {
-        font-size: 110px;
+        font-size: 6.875rem;
       }
 
       @include large {
-        font-size: 80px;
+        font-size: 5rem;
       }
     }
 
     // .pricing__duration
 
     &__duration {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 32px;
+      @include text-styling(18px, 600, 32px);
       color: $primary-color;
     }
   }

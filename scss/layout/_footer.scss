@@ -1,12 +1,11 @@
 .footer {
   @include display-flex(column, flex-end, center);
-  height: 872px;
+  height: 54.5rem;
   background-color: #3b434f;
-  padding-bottom: 80px;
+  padding-bottom: 4rem;
 
   @include medium {
-    padding-bottom: 20px;
-    // height: 1000px;
+    padding-bottom: 1.25rem;
   }
 
   @media (max-width: 617px) {
@@ -19,7 +18,7 @@
 
   .container {
     @include display-flex(column, center, center);
-    gap: 80px;
+    gap: 5rem;
   }
 
   // .footer__item
@@ -30,8 +29,7 @@
 
     @include medium {
       flex-direction: column;
-      gap: 50px;
-      // margin-top: 200px;
+      gap: 3.125rem;
     }
   }
 
@@ -39,7 +37,7 @@
 
   &__links {
     @include display-flex(column, space-between, flex-start);
-    gap: 80px;
+    gap: 5rem;
 
     @include medium {
       flex-direction: row;
@@ -48,17 +46,15 @@
     }
 
     @include small {
-      gap: 50px;
+      gap: 3.125rem;
     }
   }
 
   // .footer__logo
 
   &__logo {
+    @include text-styling(1.875rem, 700, 3.4375rem);
     color: $secondary-color;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 55px;
     letter-spacing: -0.03em;
     text-align: left;
   }
@@ -67,7 +63,7 @@
 
   &__social-links {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
   }
 
   // .footer__social-link
@@ -86,26 +82,30 @@
 
   &__menu {
     @include display-flex(row, space-between, flex-start);
-    gap: 100px;
+    gap: 6.25rem;
 
     @include medium {
       width: 100%;
-      gap: 50px;
+      gap: 3.125rem;
     }
 
     &-item {
       @include display-flex(column, space-between, flex-start);
-      gap: 32px;
+      gap: 2rem;
     }
 
     &-link {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 27px;
+      @include text-styling(1.125rem, 400, 1.6875rem);
       color: #ffffff;
+      transition: 0.35s color ease-in;
+
+      &:hover,
+      &:focus {
+        color: $secondary-color;
+      }
 
       @include medium {
-        font-size: 16px;
+        font-size: 1rem;
       }
     }
   }

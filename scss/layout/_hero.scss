@@ -1,6 +1,6 @@
 // Hero Section
 .section__hero {
-  margin-bottom: 144px;
+  margin-bottom: 9rem;
 
   .hero {
     @include display-flex(row, space-between, center);
@@ -16,17 +16,17 @@
     // .hero__item
 
     &__item:nth-child(1) {
-      width: 412px;
+      width: 25.75rem;
 
       @include large {
         @include display-flex(column, space-between, center);
         width: 100%;
-        gap: 40px;
+        gap: 2.5rem;
         text-align: center;
       }
 
       @include small {
-        gap: 30px;
+        gap: 1.875rem;
       }
     }
 
@@ -35,24 +35,22 @@
     &__text {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 1rem;
     }
 
     // .hero__title
 
     &__title {
-      font-weight: 700;
-      font-size: 60px;
-      line-height: 66px;
+      @include text-styling(3.75rem, 700, 4.125rem);
       letter-spacing: -0.03em;
       color: $primary-color;
 
       @include large {
-        font-size: 50px;
+        font-size: 3.125rem;
       }
 
       @include small {
-        font-size: 44px;
+        font-size: 2.75rem;
       }
 
       // .hero__title span
@@ -65,47 +63,43 @@
     // .hero__subtitle
 
     &__subtitle {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 180%;
+      @include text-styling(1.125rem, 400, 180%);
       color: $grey-color;
 
       @include small {
-        font-size: 16px;
+        font-size: 1rem;
       }
     }
 
     // .hero__input
 
     &__input {
-      border: 1px solid #dfe8fa;
-      border-radius: 15px;
+      @include text-styling(1.125rem, 400, 180%);
+      border: 0.0625rem solid #dfe8fa;
+      border-radius: 0.9375rem;
       width: 100%;
       outline: #dfe8fa;
-      padding: 14px 20px;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 180%;
+      padding: 0.875rem 1.25rem;
       color: $grey-color;
     }
 
     // .hero__btn
 
     &__btn {
-      padding: 16px 38px;
+      padding: 1rem 2.375rem;
 
       @include small {
-        padding: 14px 34px;
+        padding: 0.875rem 2.125rem;
       }
     }
 
     // .hero__rating
 
     &__rating {
-      margin: 16px 0;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      margin: 1rem 0;
+      gap: 1rem;
     }
 
     // .hero__reviews
@@ -117,9 +111,7 @@
     // .hero__reviews-text
 
     &__reviews-text {
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 27px;
+      @include text-styling(0.9375rem, 400, 1.6875rem);
       color: $grey-color;
     }
 
@@ -127,36 +119,34 @@
 
     &__rating-logos {
       display: flex;
-      gap: 38px;
+      gap: 2.375rem;
 
       @include small {
-        gap: 20px;
+        gap: 1.25rem;
       }
     }
 
     .form {
-      margin: 2rem 0;
       @include display-flex(column, space-between, flex-start);
-      gap: 16px;
+      margin: 2rem 0;
+      gap: 1rem;
 
       // .form__bottom
 
       &__bottom {
         @include display-flex(row, flex-start, center);
-        gap: 30px;
+        gap: 1.875rem;
       }
 
       // .form__text
 
       &__text {
+        @include text-styling(0.9375rem, 600, 1.375rem);
         color: #bbc0c7;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 22px;
         width: 35%;
 
         @include small {
-          font-size: 14px;
+          font-size: 0.875rem;
         }
       }
     }

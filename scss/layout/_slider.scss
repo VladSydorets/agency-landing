@@ -1,7 +1,7 @@
 .section__slider {
   background-color: #fffafe;
-  margin-bottom: 0;
-  padding: 140px 0 477px 0;
+  margin: 0;
+  padding: 8.75rem 0 29.8125rem 0;
 
   .container {
     @include large {
@@ -10,13 +10,14 @@
   }
 
   .swiper {
-    width: 100%;
-    height: 350px;
+    @include size(100%, 21.875rem);
 
     @include medium {
       height: fit-content;
       text-align: center;
     }
+
+    // .swiper-slide
 
     &-slide {
       @include display-flex(row, center, center);
@@ -25,10 +26,13 @@
         @include display-flex(column, center, center);
       }
 
+      // .swiper-slide-picture
+
       &-picture {
-        width: fit-content;
-        height: auto;
+        border-radius: 100%;
       }
+
+      // .swiper-slide-img
 
       &-img {
         @include large {
@@ -37,13 +41,17 @@
       }
     }
 
+    // .swiper-button-prev
+
     &-button-prev {
       transform: rotate(180deg);
-      left: 15px;
+      left: 0.9375rem;
     }
 
+    // .swiper-button-next
+
     &-button-next {
-      right: 15px;
+      right: 0.9375rem;
     }
 
     &-button-prev,
@@ -72,15 +80,18 @@
       content: "";
     }
 
+    // .swiper-slide-item
+
     &-slide-item {
       &:nth-child(1) {
+        @include display-flex(row, center, center);
         width: 35%;
       }
 
       &:last-of-type {
         @include display-flex(column, center, flex-start);
-        gap: 16px;
-        max-width: 603px;
+        gap: 1rem;
+        max-width: 37.6875rem;
 
         @include huge {
           width: 50%;
@@ -88,29 +99,29 @@
       }
     }
 
+    // .swiper-slide-title
+
     &-slide-title {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 32px;
+      @include text-styling(18px, 600, 32px);
       color: $primary-color;
 
       @include huge {
-        font-size: 16px;
+        font-size: 1rem;
       }
     }
 
+    // .swiper-slide-text
+
     &-slide-text {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 32px;
+      @include text-styling(18px, 400, 32px);
       color: $primary-color;
 
       @include huge {
-        font-size: 15px;
+        font-size: 0.9375rem;
       }
 
       @include large {
-        font-size: 13px;
+        font-size: 0.8125rem;
       }
 
       span {

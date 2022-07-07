@@ -19,6 +19,12 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > "992") {
+    document.body.classList.remove("no-scroll");
+  }
+});
+
 // Swiper
 const swiper = new Swiper(".swiper", {
   // Optional parameters

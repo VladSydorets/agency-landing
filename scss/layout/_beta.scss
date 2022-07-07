@@ -1,40 +1,37 @@
 .section__beta {
   position: relative;
-  width: 100vw;
-  height: fit-content;
+  @include size(100vw, fit-content);
 
   .beta {
     position: absolute;
-    top: -336px;
+    top: -21rem;
     max-width: $container-width;
     width: 90vw;
-    padding: 120px 40px;
+    padding: 5rem 2.5rem;
     background-color: white;
-    box-shadow: 0px -10px 150px rgba(80, 88, 100, 0.05);
-    border-radius: 20px;
+    box-shadow: 0rem -0.625rem 9.375rem rgba(80, 88, 100, 0.05);
+    border-radius: 1.25rem;
 
     @include medium {
-      padding: 60px 40px;
+      padding: 3.75rem 2.5rem;
     }
 
     // .beta__title
 
     &__title {
-      font-weight: 700;
-      font-size: 50px;
-      line-height: 55px;
+      @include text-styling(3.125rem, 700, 3.4375rem);
       text-align: center;
       letter-spacing: -0.03em;
       color: $primary-color;
-      margin-bottom: 74px;
+      margin-bottom: 4.625rem;
 
       @include huge {
-        font-size: 44px;
+        font-size: 2.75rem;
       }
 
       @include medium {
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: 2.5rem;
+        margin-bottom: 1.25rem;
       }
 
       span {
@@ -47,7 +44,7 @@
     &__form {
       display: grid;
       grid-template-columns: repeat(2, 50%);
-      gap: 30px;
+      gap: 1.875rem;
 
       @include medium {
         @include display-flex(column, center, center);
@@ -55,6 +52,7 @@
     }
 
     .btn__wrapper {
+      padding-top: 3rem;
       grid-column: span 2;
       justify-self: center;
     }
@@ -63,36 +61,34 @@
 
     &__form-item {
       @include display-flex(column, space-between, flex-start);
-      gap: 16px;
+      gap: 1rem;
       width: 100%;
 
       @include medium {
         align-items: center;
-        gap: 5px;
+        gap: 0.3125rem;
       }
 
       label {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 32px;
+        @include text-styling(1.125rem, 400, 2rem);
         color: $primary-color;
 
         @include huge {
-          font-size: 16px;
+          font-size: 1rem;
         }
       }
 
       input {
-        max-width: 500px;
+        max-width: 31.25rem;
         width: 100%;
-        padding: 24px 32px;
+        padding: 1.5rem 2rem;
         background: #f7f9fd;
-        border: 1px solid #dfe8fa;
-        border-radius: 15px;
+        border: 0.0625rem solid #dfe8fa;
+        border-radius: 0.9375rem;
         outline: none;
 
         @include huge {
-          padding: 20px 28px;
+          padding: 1.25rem 1.75rem;
         }
       }
     }
@@ -100,9 +96,7 @@
     // .beta__btn
 
     &__btn {
-      padding: 16px 53px;
-
-      // .beta__btn-wrapper
+      padding: 1rem 3.3125rem;
     }
   }
 }

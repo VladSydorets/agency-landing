@@ -1,11 +1,11 @@
 // Cases Section
 .section__cases {
   background-color: #fdf9f8;
-  padding: 100px 0 140px 0;
+  padding: 6.25rem 0 8.75rem 0;
 
   .navbar__cases {
-    max-width: 663px;
-    padding: 0 0 64px 0;
+    max-width: 41.4375rem;
+    padding: 0 0 4rem 0;
 
     &-page {
       @include display-flex(row, space-between, center);
@@ -15,25 +15,23 @@
     }
 
     &-btn {
-      padding: 8px 0;
+      padding: 0.5rem 0;
 
       &.cases-btn-active {
-        border-bottom: 3px solid $secondary-color;
+        border-bottom: 0.1875rem solid $secondary-color;
       }
 
       a {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 43px;
+        @include text-styling(1.5rem, 500, 2.6875rem);
         color: $primary-color;
 
         @include medium {
-          font-size: 20px;
+          font-size: 1.25rem;
         }
 
         @include small {
-          font-size: 16px;
-          padding: 0 3px;
+          font-size: 1rem;
+          padding: 0 0.1875rem;
         }
       }
     }
@@ -46,7 +44,6 @@
 
     img {
       max-width: 100%;
-      // max-height: auto;
       position: absolute;
       top: -10%;
       right: 0;
@@ -72,6 +69,11 @@
     &__item {
       width: 45%;
 
+      // img {
+      //   // height: auto;
+      //   // border-radius: 100%;
+      // }
+
       @include medium {
         width: 100%;
       }
@@ -81,14 +83,12 @@
 
     &__title {
       font-style: normal;
-      font-weight: 700;
-      font-size: 46px;
-      line-height: 51px;
+      @include text-styling(2.875rem, 700, 3.1875rem);
       letter-spacing: -0.03em;
       color: $primary-color;
 
       @include large {
-        font-size: 40px;
+        font-size: 2.5rem;
       }
 
       span {
@@ -99,67 +99,59 @@
     // .cases__text
 
     &__text {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 32px;
+      @include text-styling(1.125rem, 400, 2rem);
       color: $grey-color;
-      margin: 24px 0 32px 0;
+      margin: 1.5rem 0 2rem 0;
 
       @include large {
         width: 90%;
-        font-size: 14px;
+        font-size: 0.875rem;
       }
     }
 
     // .cases__subtitle
 
     &__subtitle {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 25px;
+      @include text-styling(0.875rem, 400, 1.5625rem);
       letter-spacing: 0.2em;
       color: $grey-color;
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
 
     // .cases__replaces
 
     &__replaces {
-      margin: 0 0 56px 0;
+      margin: 0 0 3.5rem 0;
     }
 
     // .cases__replaces-item
 
     &__replaces-item {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 32px;
+      @include text-styling(1.125rem, 600, 2rem);
       color: $primary-color;
-      padding: 0 13px;
+      padding: 0 0.8125rem;
 
       @include large {
-        font-size: 14px;
+        font-size: 0.875rem;
       }
 
       &:nth-child(1) {
+        border-right: 0.0625rem solid lighten($primary-color, 70%);
         padding-left: 0;
-        border-right: 1px solid lighten($primary-color, 70%);
       }
       &:nth-child(4) {
+        border-left: 0.0625rem solid lighten($primary-color, 70%);
         padding-right: 0;
-        border-left: 1px solid lighten($primary-color, 70%);
       }
       &:nth-child(2) {
-        border-right: 1px solid lighten($primary-color, 70%);
+        border-right: 0.0625rem solid lighten($primary-color, 70%);
       }
     }
 
     // .cases__btn
 
     &__btn {
-      padding: 16px 42px;
+      padding: 1rem 2.625rem;
     }
   }
 
