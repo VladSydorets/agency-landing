@@ -18,7 +18,6 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
-
 window.addEventListener("resize", () => {
   if (window.innerWidth > "992") {
     document.body.classList.remove("no-scroll");
@@ -43,6 +42,7 @@ const languageValue = document.querySelectorAll(".nav__language-item");
 for (const value of languageValue) {
   value.addEventListener("click", (e) => {
     const oldValue = document.querySelector(".nav__language-current");
+    console.log(oldValue);
     let temp = value.innerText;
     value.innerText = oldValue.innerText;
     oldValue.innerText = temp;

@@ -26,6 +26,51 @@
   &-open {
     @include display-flex(row, center, center);
     gap: 1.25rem;
+
+    .nav__language {
+      background-color: transparent;
+      padding-right: 20px;
+
+      &:hover {
+        color: lighten($primary-color, 25%);
+      }
+
+      &-item {
+        color: white;
+
+        &:hover {
+          color: lighten($primary-color, 25%);
+        }
+      }
+
+      &-current {
+        color: white;
+
+        &:hover {
+          color: lighten($primary-color, 25%);
+        }
+
+        &::after {
+          border-color: white;
+          margin-right: 5px;
+        }
+      }
+
+      &-list {
+        background-color: transparent;
+        border: 1px solid white;
+        left: 0;
+        margin-top: 5px;
+
+        a {
+          color: white;
+
+          &:hover {
+            color: lighten($primary-color, 25%);
+          }
+        }
+      }
+    }
   }
 
   @include large {
@@ -75,14 +120,14 @@
           }
         }
 
-        .nav__language {
-          color: white;
+        // .nav__language {
+        //   color: white;
 
-          &-current::after {
-            border-left: 0.0625rem solid white;
-            border-bottom: 0.0625rem solid white;
-          }
-        }
+        //   &-current::after {
+        //     border-left: 0.0625rem solid white;
+        //     border-bottom: 0.0625rem solid white;
+        //   }
+        // }
       }
     }
   }

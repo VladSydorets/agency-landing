@@ -29,14 +29,11 @@
       // .swiper-slide-picture
 
       &-picture {
+        height: auto;
         border-radius: 100%;
-      }
 
-      // .swiper-slide-img
-
-      &-img {
-        @include large {
-          display: none;
+        @include small {
+          padding-bottom: 1.25rem;
         }
       }
     }
@@ -95,6 +92,10 @@
 
         @include huge {
           width: 50%;
+        }
+
+        @include medium {
+          @include display-flex(column, center, center);
         }
       }
     }

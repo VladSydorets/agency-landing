@@ -1,16 +1,17 @@
 .footer {
   @include display-flex(column, flex-end, center);
-  height: 54.5rem;
+  height: 50rem;
   background-color: #3b434f;
   padding-bottom: 4rem;
 
   @include medium {
     padding-bottom: 1.25rem;
-  }
-
-  @media (max-width: 617px) {
     height: 920px;
   }
+
+  // @media (max-width: 617px) {
+
+  // }
 
   @include small {
     height: 1000px;
@@ -18,7 +19,7 @@
 
   .container {
     @include display-flex(column, center, center);
-    gap: 5rem;
+    gap: 3rem;
   }
 
   // .footer__item
@@ -29,7 +30,7 @@
 
     @include medium {
       flex-direction: column;
-      gap: 3.125rem;
+      gap: 3rem;
     }
   }
 
@@ -84,9 +85,13 @@
     @include display-flex(row, space-between, flex-start);
     gap: 6.25rem;
 
+    @include large {
+      gap: 3.125rem;
+    }
+
     @include medium {
       width: 100%;
-      gap: 3.125rem;
+      gap: 3rem;
     }
 
     &-item {
@@ -105,7 +110,7 @@
       }
 
       @include medium {
-        font-size: 1rem;
+        font-size: 15px;
       }
     }
   }
